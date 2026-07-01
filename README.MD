@@ -185,8 +185,6 @@ The project includes:
 - Average Squad Spending Trend
 - Average ROI Trend
 
-> Add screenshots here after pushing the project.
-
 ---
 
 ## Conclusion
@@ -194,15 +192,6 @@ The project includes:
 The analysis indicates that **money improves a team's chances of success, but it does not guarantee tournament performance**.
 
 While higher-valued squads generally progress further, several lower-valued teams consistently outperformed expectations, demonstrating that tactical quality, team cohesion, and execution remain crucial factors in World Cup success.
-
----
-
-## Future Work
-
-- Build an interactive Power BI dashboard
-- Deploy a web dashboard
-- Develop a 2026 World Cup prediction model
-- Add interactive filters and player-level analysis
 
 ---
 
