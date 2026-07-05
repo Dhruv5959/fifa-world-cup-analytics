@@ -1,4 +1,4 @@
-# ⚽ Does Money Buy Success?
+# Does Money Buy Success?
 
 # FIFA World Cup Analytics (2010–2022)
 
@@ -6,7 +6,7 @@ A data analytics project investigating whether higher squad market values lead t
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 <ol>
   <li><a href="#overview">Overview</a></li>
@@ -232,10 +232,19 @@ Alongside the Python analysis, an interactive **Power BI dashboard** was develop
 
 ## Dashboard Preview
 
+## Dashboard Preview
+
 ### Power BI Dashboard
 
 ![Power BI Dashboard](Presentation/Dashboard.png)
+
 ---
+
+## Interactive Power BI Report
+
+Download the Power BI dashboard here:
+
+[FifaDashboard.pbix](Presentation/FifaDashboard.pbix)
 
 ## Conclusion
 
