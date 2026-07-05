@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 #pandas
-df = pd.read_excel("Fifa_master_v2.xlsx")
+df = pd.read_excel("C:/PersonalStuff/projects/FifaProject/Fifa_master_v3.xlsx")
 
 print(df.head())
 print(df.info())
@@ -14,6 +14,18 @@ df
 df["squad_value_m"] = df["squad_total_market_value_eur"] / 1_000_000 ## Convert squad value from euros to millions
 print(df[["team", "year", "squad_value_m"]].head(10))
 
+# Convert round_score into readable tournament stage
+stage_map = {
+    0: "Group Stage",
+    2: "Quarter-final",
+    3: "Semi-final",
+    4: "Runner-up",
+    5: "Winner"
+}
+
+df["stage_reached"] = df["round_score"].map(stage_map)
+
+print(df[["team", "year", "round_score", "stage_reached"]].head(10))
 
 df["round_score"] = 0
 
@@ -146,3 +158,4 @@ plt.ylabel('Average Squad Market Value (€ Million)')
 plt.savefig("charts/yearly_Spending_trend.png", dpi=300, bbox_inches="tight")
 plt.show()
 
+df.to_excel("Fifa_master_v3.xlsx", index=False)
