@@ -136,13 +136,12 @@ The analysis produced several notable insights:
 
 ## Project Structure
 
+## Project Structure
+
 ```text
 fifa-world-cup-analytics/
 │
-├── data/
-│   └── Fifa_master_v2.xlsx
-│
-├── charts/
+├── Charts/
 │   ├── top_10_roi.png
 │   ├── scatter_2010.png
 │   ├── scatter_2014.png
@@ -152,10 +151,16 @@ fifa-world-cup-analytics/
 │   ├── yearly_roi_trend.png
 │   └── yearly_spending_trend.png
 │
-├── dashboard/
-│   └── dashboard.png
+├── Data/
+│   └── Updated_FifaData.xlsx
 │
-├── analysis.py
+├── Presentation/
+│   ├── Dashboard.png
+│   └── FifaDashboard.pbix
+│
+├── Scripts/
+│   └── analysis.py
+│
 ├── README.md
 └── requirements.txt
 ```
@@ -229,7 +234,7 @@ Alongside the Python analysis, an interactive **Power BI dashboard** was develop
 
 ### Power BI Dashboard
 
-
+![Power BI Dashboard](Presentation/Dashboard.png)
 ---
 
 ## Conclusion
@@ -245,8 +250,6 @@ Overall, the findings reveal a **moderate positive relationship (r = 0.47)** bet
 ## Author
 
 **Dhruv Patel**
-
-Computer Engineering Student | Aspiring Data Analyst
 
 - GitHub: https://github.com/Dhruv5959
 - LinkedIn: https://www.linkedin.com/in/dhruv-patel-7b194a318
