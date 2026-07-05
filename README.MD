@@ -1,8 +1,8 @@
 # ⚽ Does Money Buy Success?
 
-## FIFA World Cup Analytics (2010–2022)
+# FIFA World Cup Analytics (2010–2022)
 
-A data analytics project investigating whether higher squad market values lead to greater FIFA World Cup success using Python, Pandas, NumPy, and Matplotlib.
+A data analytics project investigating whether higher squad market values lead to greater FIFA World Cup success using **Python** for data analysis and **Power BI** for interactive dashboard visualization.
 
 ---
 
@@ -15,9 +15,12 @@ A data analytics project investigating whether higher squad market values lead t
   <li><a href="#tools--technologies">Tools & Technologies</a></li>
   <li><a href="#methodology">Methodology</a></li>
   <li><a href="#key-findings">Key Findings</a></li>
+  <li><a href="#results">Results</a></li>
   <li><a href="#project-structure">Project Structure</a></li>
   <li><a href="#how-to-run">How to Run</a></li>
   <li><a href="#visualizations">Visualizations</a></li>
+  <li><a href="#interactive-dashboard">Interactive Dashboard</a></li>
+  <li><a href="#dashboard-preview">Dashboard Preview</a></li>
   <li><a href="#conclusion">Conclusion</a></li>
   <li><a href="#future-work">Future Work</a></li>
   <li><a href="#author">Author</a></li>
@@ -28,6 +31,8 @@ A data analytics project investigating whether higher squad market values lead t
 ## Overview
 
 This project analyzes FIFA World Cup team data from **2010–2022** to determine whether expensive squads perform better in the tournament.
+
+Using **Python** for data cleaning, feature engineering, and statistical analysis, along with **Power BI** for interactive dashboard development, the project investigates whether higher squad market values translate into greater tournament success.
 
 A custom **Return on Investment (ROI)** metric was developed to compare tournament performance relative to squad market value, helping identify both overperforming and underperforming teams.
 
@@ -41,11 +46,11 @@ A custom **Return on Investment (ROI)** metric was developed to compare tourname
 
 ## Dataset
 
-**Source**
+### Source
 
 https://www.kaggle.com/datasets/harrachimustapha/fifa-world-cup-team-dataset
 
-**Coverage**
+### Coverage
 
 - FIFA World Cup
 - 2010
@@ -63,7 +68,8 @@ https://www.kaggle.com/datasets/harrachimustapha/fifa-world-cup-team-dataset
 | Python | Data Analysis |
 | Pandas | Data Cleaning & Feature Engineering |
 | NumPy | Numerical Calculations |
-| Matplotlib | Data Visualization |
+| Matplotlib | Exploratory Data Visualization |
+| **Power BI** | Interactive Dashboard & Business Intelligence |
 | Excel | Dataset Preparation |
 
 ---
@@ -83,7 +89,7 @@ Created:
 - **Tournament Performance Score**
 - **ROI (Return on Investment)**
 
-**Tournament Performance Score**
+### Tournament Performance Score
 
 | Stage | Score |
 |------|------:|
@@ -93,7 +99,7 @@ Created:
 | Runner-up | 4 |
 | Winner | 5 |
 
-**ROI Formula**
+### ROI Formula
 
 ```text
 ROI = Tournament Performance Score / Squad Market Value
@@ -107,8 +113,6 @@ ROI = Tournament Performance Score / Squad Market Value
 - Biggest Tournament Disappointments
 - Year-wise Spending vs Success
 
----
-
 ## Key Findings
 
 - Squad market value and tournament success show a **moderate positive correlation (≈0.47)**.
@@ -116,6 +120,18 @@ ROI = Tournament Performance Score / Squad Market Value
 - Costa Rica (2014) delivered one of the highest value-for-money performances.
 - Spain (2018) and Germany (2018) were among the tournament favourites but exited in the group stage.
 - Average squad values increased significantly between 2010 and 2022.
+
+---
+
+## Results
+
+The analysis produced several notable insights:
+
+- **Correlation between Squad Market Value and Tournament Success:** **0.47**
+- **Highest ROI Performance:** Costa Rica (2014)
+- Average squad market values increased consistently from **2010 to 2022**
+- Several high-value squads underperformed despite their financial strength.
+- Lower-valued teams repeatedly demonstrated that tactical quality, team cohesion, and execution can outperform financial investment.
 
 ---
 
@@ -137,6 +153,9 @@ fifa-world-cup-analytics/
 │   ├── yearly_roi_trend.png
 │   └── yearly_spending_trend.png
 │
+├── dashboard/
+│   └── dashboard.png
+│
 ├── analysis.py
 ├── README.md
 └── requirements.txt
@@ -146,25 +165,25 @@ fifa-world-cup-analytics/
 
 ## How to Run
 
-Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/Dhruv5959/fifa-world-cup-analytics.git
 ```
 
-Move into the project
+### Move into the project
 
 ```bash
 cd fifa-world-cup-analytics
 ```
 
-Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run
+### Run the analysis
 
 ```bash
 python analysis.py
@@ -187,11 +206,50 @@ The project includes:
 
 ---
 
+## Interactive Dashboard
+
+Alongside the Python analysis, an interactive **Power BI dashboard** was developed to enable users to explore World Cup spending patterns dynamically.
+
+### Dashboard Features
+
+- Filter analysis by FIFA World Cup year (2010–2022)
+- View the World Cup Champion for the selected tournament
+- Identify the highest Value-for-Money (ROI) teams
+- Analyze average ROI trends across World Cups
+- Explore the relationship between squad market value and tournament performance
+- Identify expensive teams that underperformed expectations
+- View key performance indicators including:
+  - Teams Analyzed
+  - Highest ROI
+  - Average Squad Market Value
+- Executive insight summarizing the overall findings
+
+---
+
+## Dashboard Preview
+
+### Power BI Dashboard
+
+```text
+dashboard/
+└── dashboard.png
+```
+
+Example:
+
+```markdown
+![Power BI Dashboard](C:\PersonalStuff\projects\FifaProject\Presentation\Dashboard.png)
+```
+
+---
+
 ## Conclusion
 
 The analysis indicates that **money improves a team's chances of success, but it does not guarantee tournament performance**.
 
 While higher-valued squads generally progress further, several lower-valued teams consistently outperformed expectations, demonstrating that tactical quality, team cohesion, and execution remain crucial factors in World Cup success.
+
+Overall, the findings reveal a **moderate positive relationship (r = 0.47)** between squad market value and tournament success, suggesting that financial investment increases the probability of success but cannot consistently predict World Cup outcomes.
 
 ---
 
@@ -199,5 +257,11 @@ While higher-valued squads generally progress further, several lower-valued team
 
 **Dhruv Patel**
 
+Computer Engineering Student | Aspiring Data Analyst
+
 - GitHub: https://github.com/Dhruv5959
 - LinkedIn: https://www.linkedin.com/in/dhruv-patel-7b194a318
+
+---
+
+### ⭐ If you found this project interesting, consider giving it a star!
