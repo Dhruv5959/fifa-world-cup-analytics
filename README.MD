@@ -22,7 +22,6 @@ A data analytics project investigating whether higher squad market values lead t
   <li><a href="#interactive-dashboard">Interactive Dashboard</a></li>
   <li><a href="#dashboard-preview">Dashboard Preview</a></li>
   <li><a href="#conclusion">Conclusion</a></li>
-  <li><a href="#future-work">Future Work</a></li>
   <li><a href="#author">Author</a></li>
 </ol>
 
@@ -230,16 +229,6 @@ Alongside the Python analysis, an interactive **Power BI dashboard** was develop
 
 ### Power BI Dashboard
 
-```text
-dashboard/
-└── dashboard.png
-```
-
-Example:
-
-```markdown
-![Power BI Dashboard](C:\PersonalStuff\projects\FifaProject\Presentation\Dashboard.png)
-```
 
 ---
 
