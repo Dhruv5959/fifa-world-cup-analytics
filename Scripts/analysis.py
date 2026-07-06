@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 #pandas
-df = pd.read_excel("C:/PersonalStuff/projects/FifaProject/Fifa_master_v3.xlsx")
+df = pd.read_excel("Data/Updated_FifaData.xlsx")
 
 print(df.head())
 print(df.info())
@@ -79,7 +79,7 @@ plt.xlabel("Return of Investment Score")
 plt.ylabel("Teams")
 
 plt.savefig(
-    "charts/top_10_roi.png",     dpi=300,     bbox_inches="tight"
+    "Charts/top_10_roi.png",     dpi=300,     bbox_inches="tight"
 )
 plt.show()
 
@@ -121,7 +121,7 @@ plt.ylabel("Tournament Performance Score")
   
 
 plt.savefig(
-        f"charts/scatter_{year}.png",
+        f"Charts/scatter_{year}.png",
         dpi=300,
         bbox_inches="tight"
     )
@@ -141,10 +141,10 @@ print(disappointments[['team_year','year','squad_value_m','value_rank_in_year','
 
 plt.figure(figsize=(13,10))
 plt.barh(disappointments["team_year"], disappointments["squad_value_m"], color="crimson")
-plt.title("Biggest World Cup Disappointments\nTop 5 Favorites Each Year, Exited by Quarterfinals")
+plt.title("Biggest World Cup Disappointments\nTop Favorites Each Year, Exited by Quarterfinals")
 plt.xlabel("Squad Value (€ Million)")
 plt.ylabel("Teams")
-plt.savefig("charts/biggest_disappointments.png", dpi=300, bbox_inches="tight")
+plt.savefig("Charts/biggest_disappointments.png", dpi=300, bbox_inches="tight")
 plt.show()
 
 # Yearly Roi trend vs Yearly spending trend
@@ -155,7 +155,7 @@ plt.plot(yearly_spending.index, yearly_spending.values, marker='o', linewidth=2,
 plt.title('Average Squad Market Value by World Cup Year')
 plt.xlabel('Year')
 plt.ylabel('Average Squad Market Value (€ Million)')
-plt.savefig("charts/yearly_Spending_trend.png", dpi=300, bbox_inches="tight")
+plt.savefig("Charts/yearly_Spending_trend.png", dpi=300, bbox_inches="tight")
 plt.show()
 
-df.to_excel("Fifa_master_v3.xlsx", index=False)
+df.to_excel("Data/Updated_FifaData.xlsx", index=False)
