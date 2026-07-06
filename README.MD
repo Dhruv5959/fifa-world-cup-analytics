@@ -236,7 +236,7 @@ Alongside the Python analysis, an interactive **Power BI dashboard** was develop
 
 ### Power BI Dashboard
 
-![Power BI Dashboard](Presentation/Dashboard.png)
+![Power BI Dashboard](Dashboard/Dashboard.png)
 
 ---
 
