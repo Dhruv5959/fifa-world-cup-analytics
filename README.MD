@@ -1,6 +1,6 @@
 # Does Money Buy Success?
 
-##FIFA World Cup Analytics (2010–2022)
+FIFA World Cup Analytics (2010–2022)
 
 A data analytics project investigating whether higher squad market values lead to greater FIFA World Cup success using **Python** for data analysis and **Power BI** for interactive dashboard visualization.
 
